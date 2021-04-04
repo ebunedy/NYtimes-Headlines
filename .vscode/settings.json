@@ -1,0 +1,8 @@
+{
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "prettier.vueIndentScriptAndStyle": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "editor.formatOnSave": true
+}
