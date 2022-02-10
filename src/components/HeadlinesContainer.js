@@ -19,14 +19,8 @@ const HeadlinesContainer = () => {
     <HeadlinesWrapper>
       <div className='cards-container'>
         {newsPage.map((item) => {
-          const {
-            title,
-            abstract,
-            url,
-            uri,
-            published_date,
-            multimedia,
-          } = item;
+          const { title, abstract, url, uri, published_date, multimedia } =
+            item;
           return (
             <article className='card' key={uri}>
               <Headline
@@ -34,7 +28,7 @@ const HeadlinesContainer = () => {
                 abstract={abstract}
                 url={url}
                 published_date={published_date}
-                multimedia={multimedia ? multimedia[4].url : img}
+                multimedia={multimedia ? multimedia[1].url : img}
                 uri={uri}
               />
             </article>
