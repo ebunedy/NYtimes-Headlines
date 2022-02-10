@@ -28,6 +28,7 @@ const AppProvider = ({ children }) => {
       .catch((err) => {
         if (err) {
           console.log('error fetching data');
+          setLoading(true);
         }
       });
   }, [param, page, newsLength, setPage, url]);
